@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <th>School_Name</th>
+            <th>School_Principle</th>
+            <th>School_Location</th>
+            <th>Semail</th>
+            <th>Remail</th>
+            {% for so in school %}
+            <tr>
+                <td>{{so.Sname}}</td>
+                <td>{{so.Sprinciple}}</td>
+                <td>{{so.Slocation}}</td>
+                <td>{{so.semail}}</td>
+                <td>{{so.remail}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
